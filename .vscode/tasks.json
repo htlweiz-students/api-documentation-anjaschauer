@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/--avarage_calculator/--avarage_calculator.csproj",
+                "${workspaceFolder}/api-documentation-anjaschauer.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/--avarage_calculator/--avarage_calculator.csproj",
+                "${workspaceFolder}/api-documentation-anjaschauer.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary;ForceNoAlign"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/--avarage_calculator/--avarage_calculator.csproj"
+                "${workspaceFolder}/api-documentation-anjaschauer.sln"
             ],
             "problemMatcher": "$msCompile"
         }

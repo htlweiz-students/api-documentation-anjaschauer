@@ -10,9 +10,9 @@
             "request": "launch",
             "preLaunchTask": "build",
             // If you have changed target frameworks, make sure to update the program path.
-            "program": "${workspaceFolder}/--avarage_calculator/bin/Debug/net8.0/--avarage_calculator.dll",
+            "program": "${workspaceFolder}/program00/bin/Debug/net8.0/program00.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/--avarage_calculator",
+            "cwd": "${workspaceFolder}/program00",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
             "console": "internalConsole",
             "stopAtEntry": false
