@@ -13,13 +13,18 @@ namespace AverageCalculator;
         private double[] values;
 
         /// <summary>
-        /// 
+        /// Initialisiert eine neue Instanz mit
+        /// einer leeren Warteliste
         /// </summary>
         public AverageCalculator()
         {
             values = new double[0];
         }
 
+        /// <summary>
+        /// Fügt einen einzelnen Zahlenwert hinzu
+        /// </summary>
+        /// <param name="value">Der hinzugefügte Wert</param>
         public void add(double value)
         {
             double[] newArray = new double[values.Length + 1];
@@ -33,6 +38,10 @@ namespace AverageCalculator;
             values = newArray;
         }
 
+        /// <summary>
+        /// Fügt mehrere Zahlenwerte hinzu
+        /// </summary>
+        /// <param name="newValues">Array mit hinzugefügenden Werten</param>
         public void add(double[] newValues)
         {
             if (newValues == null || newValues.Length == 0)
@@ -55,6 +64,11 @@ namespace AverageCalculator;
             values = newArray;
         }
 
+        /// <summary>
+        /// Berechnet den Durchschnitt aller
+        /// gespeicherten Werte
+        /// </summary>
+        /// <returns>Der Durchschnitt der Werte oder 0, wenn keine Werte vorhanden sind</returns>
         public double getAverage()
         {
             if (values.Length == 0)
@@ -72,6 +86,10 @@ namespace AverageCalculator;
             return sum / values.Length;
         }
 
+        /// <summary>
+        /// Gibt alle gespeicherten Werte als neues Array zurück
+        /// </summary>
+        /// <returns>Eine Kopie des internen Wertes</returns>
         public double[] getElements()
         {
             double[] result = new double[values.Length];
@@ -84,6 +102,10 @@ namespace AverageCalculator;
             return result;
         }
 
+        /// <summary>
+        /// Gibt die Anzahl der gespeicherten Werte zurück
+        /// </summary>
+        /// <returns>Anzahl der aktuell gespeicherten Werte</returns>
         public int count()
         {
             return values.Length;
